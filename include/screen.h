@@ -20,8 +20,12 @@ class Screen
     public:
         Screen();
         bool init();
+        void set_pixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue);
+        void update_screen();
         bool process_event();
         void close();
+        void clear();
+
 
 
 };

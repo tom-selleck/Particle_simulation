@@ -42,20 +42,43 @@ bool Screen::init()
         return false;
     }
 
-    Uint32 *m_buffer = new Uint32[screen_width*screen_height];
+    m_buffer = new Uint32[screen_width*screen_height];
+    //memset(m_buffer, 0, screen_width*screen_height*sizeof(Uint32));
 
-    memset(m_buffer, 0, screen_height*screen_width*sizeof(Uint32));
+    return true;
+};
 
-    for(int i = 0; i<screen_height*screen_width; i++)
+void Screen::clear()
+{
+        memset(m_buffer,0, screen_width*screen_height*sizeof(Uint32));
+}
+
+void Screen::set_pixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue)
+{
+    if(x < 0 || x >= screen_width || y < 0  || y >= screen_height)
     {
-        m_buffer[i] = 0x0000FFFF;
+        return;
     }
+    Uint32 color = 0;
+
+    color += red;
+    color <<= 8;
+    color += green;
+    color <<= 8;
+    color += blue;
+    color <<= 8;
+    color += 0xFF;
+
+    m_buffer[(y*screen_width + x)] = color;
+}
+void Screen::update_screen()
+    {
     SDL_UpdateTexture(m_texture, NULL, m_buffer, screen_width*sizeof(Uint32));
     SDL_RenderClear(m_renderer);
     SDL_RenderCopy(m_renderer, m_texture, NULL, NULL);
     SDL_RenderPresent(m_renderer);
-    return true;
-};
+
+    };
 
 bool Screen::process_event()
 {

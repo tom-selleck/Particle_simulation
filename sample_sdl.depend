@@ -368,3 +368,35 @@
 	<SDL.h>
 	<string.h>
 
+1595881568 source:c:\programowanko\sample_sdl\sample_sdl\particle_simulation\main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<SDL.h>
+	"screen.h"
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"swarm.h"
+
+1595789531 c:\programowanko\sample_sdl\sample_sdl\particle_simulation\include\screen.h
+	<SDL.h>
+
+1595789541 source:c:\programowanko\sample_sdl\sample_sdl\particle_simulation\src\screen.cpp
+	"screen.h"
+	<SDL.h>
+	<string.h>
+
+1595881337 source:c:\programowanko\sample_sdl\sample_sdl\particle_simulation\src\particle.cpp
+	"particle.h"
+	<math.h>
+	<stdlib.h>
+
+1595880837 c:\programowanko\sample_sdl\sample_sdl\particle_simulation\include\particle.h
+
+1595789275 source:c:\programowanko\sample_sdl\sample_sdl\particle_simulation\src\swarm.cpp
+	"swarm.h"
+
+1595881337 c:\programowanko\sample_sdl\sample_sdl\particle_simulation\include\swarm.h
+	"particle.h"
+
