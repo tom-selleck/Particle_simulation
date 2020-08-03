@@ -26,11 +26,12 @@ int main(int argc, char *argv[])
     while(true)
     {
         //update particles
-    screen.clear();
-    swarm.update();
+   // screen.clear();
         //draw particles
 
     int elapsed = SDL_GetTicks();
+    swarm.update(elapsed);
+
 
     unsigned char red = (1+sin(elapsed*0.0001))*128;
     unsigned char green = (1+sin(elapsed*0.0002))*128;
@@ -52,8 +53,10 @@ int main(int argc, char *argv[])
             screen.set_pixel(x, y, red, green, blue);
         }
 
+        screen.box_blur();
+
         // draw on the screen
-       screen.update_screen();\
+       screen.update_screen();
 
         //check for events
         if(screen.process_event() == false)

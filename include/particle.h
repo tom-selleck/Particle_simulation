@@ -7,17 +7,19 @@ struct Particle
     double m_x;
     double m_y;
 
-    double m_speed;
-    double m_direction;
 
     public:
         Particle();
         virtual ~Particle();
-        void update_pos();
+        void update_pos(int interval);
+
 
     protected:
 
     private:
+    double m_speed;
+    double m_direction;
+    void init();
 
 };
 

@@ -8,7 +8,7 @@ class Swarm
         Swarm();
         virtual ~Swarm();
         const static int NPARTICLES = 5000;
-        void update();
+        void update(int elapsed);
 
         const Particle * const get_particles()
         {
@@ -18,6 +18,7 @@ class Swarm
 
     private:
          Particle *m_p_particles;
+         int last_time;
 };
 
 #endif // SWARM_H

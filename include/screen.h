@@ -14,7 +14,8 @@ class Screen
         SDL_Window *m_window;
         SDL_Renderer *m_renderer;
         SDL_Texture *m_texture;
-        Uint32 *m_buffer;
+        Uint32 *m_buffer_1;
+        Uint32 *m_buffer_2;
 
 
     public:
@@ -25,6 +26,7 @@ class Screen
         bool process_event();
         void close();
         void clear();
+        void box_blur();
 
 
 
