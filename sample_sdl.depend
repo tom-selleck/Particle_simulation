@@ -400,3 +400,35 @@
 1595882083 c:\programowanko\sample_sdl\sample_sdl\particle_simulation\include\swarm.h
 	"particle.h"
 
+1612123927 source:/home/tom_selleck/Cpp_projects/Particle_simulation/main.cpp
+	<iostream>
+	<stdio.h>
+	<string.h>
+	<SDL.h>
+	"screen.h"
+	<math.h>
+	<stdlib.h>
+	<time.h>
+	"swarm.h"
+
+1612123927 /home/tom_selleck/Cpp_projects/Particle_simulation/include/screen.h
+	<SDL.h>
+
+1612123927 /home/tom_selleck/Cpp_projects/Particle_simulation/include/swarm.h
+	"particle.h"
+
+1612123927 /home/tom_selleck/Cpp_projects/Particle_simulation/include/particle.h
+
+1612123927 source:/home/tom_selleck/Cpp_projects/Particle_simulation/src/particle.cpp
+	"particle.h"
+	<math.h>
+	<stdlib.h>
+
+1612123927 source:/home/tom_selleck/Cpp_projects/Particle_simulation/src/screen.cpp
+	"screen.h"
+	<SDL.h>
+	<string.h>
+
+1612123927 source:/home/tom_selleck/Cpp_projects/Particle_simulation/src/swarm.cpp
+	"swarm.h"
+
