@@ -1,2 +1,2 @@
 # Particle_simulation
- simple particle simulation made with SDL2
+ particle swarm simulation made with SDL2
